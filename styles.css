@@ -15,7 +15,7 @@ body{
     text-align: center;
     /* border: 1px solid #777; */
     /* border-radius: 5px; */
-    border: 1px solid #777;
+    /* border: 1px solid #777; */
     width: 100%;
     /* background-color: lightblue; */
 }
@@ -235,9 +235,80 @@ form button{
  
   
   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
+  @media screen and (max-width: 390px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .navbar .time {
+        display: none;
+    }
+
+
+    .con {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        /* flex-grow: initial; */
+        /* width: 100%; */
+        flex-wrap: wrap;
+    }
+    .box {
+        flex: 1;
+        /* justify-self: center; */
+    }
+
+    .chart {
+        display: flex;
+        width: 250px;
+        /* height: auto; */
+        justify-content: center;
+        align-items: baseline;
+        margin-top: 300px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .navbar .time {
+        display: none;
+    }
+
+
+    .con {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        /* flex-grow: initial; */
+        /* width: 100%; */
+        flex-wrap: wrap;
+    }
+    .box {
+        flex: 1;
+    
+    }
+
+    .chart {
+        display: flex;
+        width: 500px;
+        /* height: auto; */
+        justify-content: center;
+        align-items: baseline;
+        margin-top: 300px;
     }
   }
